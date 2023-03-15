@@ -13,6 +13,10 @@
 		BC9505A129BEFA9900C0B8FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9505A029BEFA9900C0B8FE /* ContentView.swift */; };
 		BC9505A329BEFA9900C0B8FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC9505A229BEFA9900C0B8FE /* Assets.xcassets */; };
 		BC9505A729BEFA9900C0B8FE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC9505A629BEFA9900C0B8FE /* Preview Assets.xcassets */; };
+		BC9505AF29BEFE1A00C0B8FE /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = BC9505AE29BEFE1A00C0B8FE /* Charts */; };
+		BC9505B129BF22EE00C0B8FE /* WineTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9505B029BF22EE00C0B8FE /* WineTransaction.swift */; };
+		BC9505B329BF23B000C0B8FE /* TransactionBarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9505B229BF23B000C0B8FE /* TransactionBarChartView.swift */; };
+		BC9505B529BF2CFA00C0B8FE /* ShowBarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9505B429BF2CFA00C0B8FE /* ShowBarChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,9 @@
 		BC9505A229BEFA9900C0B8FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC9505A429BEFA9900C0B8FE /* PoCCharts.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PoCCharts.entitlements; sourceTree = "<group>"; };
 		BC9505A629BEFA9900C0B8FE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BC9505B029BF22EE00C0B8FE /* WineTransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WineTransaction.swift; sourceTree = "<group>"; };
+		BC9505B229BF23B000C0B8FE /* TransactionBarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionBarChartView.swift; sourceTree = "<group>"; };
+		BC9505B429BF2CFA00C0B8FE /* ShowBarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowBarChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC9505AF29BEFE1A00C0B8FE /* Charts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +64,9 @@
 		BC95059829BEFA9900C0B8FE /* PoCCharts */ = {
 			isa = PBXGroup;
 			children = (
+				BC9505B029BF22EE00C0B8FE /* WineTransaction.swift */,
+				BC9505B429BF2CFA00C0B8FE /* ShowBarChartView.swift */,
+				BC9505B229BF23B000C0B8FE /* TransactionBarChartView.swift */,
 				BC95059929BEFA9900C0B8FE /* PoCChartsApp.swift */,
 				BC95059B29BEFA9900C0B8FE /* Persistence.swift */,
 				BC9505A029BEFA9900C0B8FE /* ContentView.swift */,
@@ -91,6 +102,9 @@
 			dependencies = (
 			);
 			name = PoCCharts;
+			packageProductDependencies = (
+				BC9505AE29BEFE1A00C0B8FE /* Charts */,
+			);
 			productName = PoCCharts;
 			productReference = BC95059629BEFA9900C0B8FE /* PoCCharts.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +133,9 @@
 				Base,
 			);
 			mainGroup = BC95058D29BEFA9900C0B8FE;
+			packageReferences = (
+				BC9505AD29BEFE1A00C0B8FE /* XCRemoteSwiftPackageReference "Charts" */,
+			);
 			productRefGroup = BC95059729BEFA9900C0B8FE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -146,7 +163,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC95059A29BEFA9900C0B8FE /* PoCChartsApp.swift in Sources */,
+				BC9505B129BF22EE00C0B8FE /* WineTransaction.swift in Sources */,
+				BC9505B329BF23B000C0B8FE /* TransactionBarChartView.swift in Sources */,
 				BC95059C29BEFA9900C0B8FE /* Persistence.swift in Sources */,
+				BC9505B529BF2CFA00C0B8FE /* ShowBarChartView.swift in Sources */,
 				BC9505A129BEFA9900C0B8FE /* ContentView.swift in Sources */,
 				BC95059F29BEFA9900C0B8FE /* PoCCharts.xcdatamodeld in Sources */,
 			);
@@ -277,6 +297,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.books";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -285,8 +306,7 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -295,10 +315,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.guadoo.PoCCharts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,6 +337,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.books";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -323,8 +346,7 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -333,10 +355,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.guadoo.PoCCharts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -362,6 +386,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BC9505AD29BEFE1A00C0B8FE /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts";
+			requirement = {
+				kind = exactVersion;
+				version = 4.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BC9505AE29BEFE1A00C0B8FE /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC9505AD29BEFE1A00C0B8FE /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = Charts;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		BC95059D29BEFA9900C0B8FE /* PoCCharts.xcdatamodeld */ = {
